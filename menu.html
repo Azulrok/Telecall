@@ -1,61 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Login do Usuário</title>
-	<link rel="icon" href="img/icon.png">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
-
-</head>
 
 <style>
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin:  auto;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B91C2C;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+}
+nav .logo {
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav #toggle,
+nav label {
+  display: none;
+}
+
+@media (max-width: 40.625em) {
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+}
 
 </style>
-<body>	    
-	<nav class="navbar " role="navigation" style="background-color: #B91C2C;" aria-label="main navigation" $danger>
-		<div class="navbar-brand">
-		  <a class="navbar-item" href="#">
-			<img src="img/logo.png" width="200" height="500"  >
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-			<span aria-hidden="true"></span>
-		  </a>
-		</div>
-	  
-		<div id="navbarBasicExample" class="navbar-menu">
-		  <div class="navbar-start">
-			<a class="navbar-item">
-			  Home
-			</a>
-	  
-			<a class="navbar-item">
-			  cadastro
-			</a>
-			<a class="navbar-item">
-				Login
-			</a>
-			<a class="navbar-item">
-				contato
-			</a>  
-			</div>
-		  </div>
-	  
-		  <div class="navbar-end">
-			<div class="navbar-item">
-			  <div class="buttons">
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </nav>
-</body>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <img src="img/logo.png" alt="">
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle"><i class="material-icons">menu</i></label>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
+
 </html>
