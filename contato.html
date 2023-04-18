@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login do Usuário</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+	<d class="imag">
+
+		<img id="imag" src="img/logo.png">
+
+	</d>
+
+
+<br>
+	<center>
+		<h1>
+			<p class="p2">Contato
+		</h1>
+	</center>
+
+
+
+	<div class="">
+			<img id="telecall" src="img/telecall.png"  >
+			<p class="p2">
+				<label for="nome">Nome :</label>
+				<input type="text" id="nome" name="nome" required placeholder="Nome ">
+				<br>
+				<label for="usuario">Nome da Empresa :</label>
+				<input type="text" id="usuario" name="usuario" minlength="11" maxlength="11" required placeholder="Nome da Empresa">
+				<br>
+				<label for="email">E-mail :</label>
+				<input type="email" id="email" name="email" required placeholder="exemple@mail.com">
+				<br>
+				<label for="tel">Telefone de Contato:</label>
+				<input type="text" id="tel" name="tel" required placeholder=" Insira um Telefone">
+				<br>
+				<input type="checkbox" id="tel" name="tel">WhatsApp
+				<br>
+				<form action="">
+					<label for="assunto" class="p2">Assunto:</label><br>
+					<input list="assunto"  placeholder=" Escolha um Assunto">
+					<datalist id="assunto" required>
+						<option value="Comercial" />
+						<option value="Suporte Técnico" />
+						<option value="Administrativo" />
+						<option value="Financeiro" />
+						<option value="Outros" />
+					</datalist>
+				</form>
+				<br>
+				<label for="Mensagem"  class="p2">Mensagem:</label>
+				<br>
+				<br>
+				<textarea  required  id="Mensagem" name="Mensagem" maxlength="300" rows="5" cols="50" placeholder="Digite o assunto" >
+				</textarea>
+				<br>
+				<br>
+				<a href="home"><input button type="submit" value="Enviar"></a>
+			</p>
+	</div>
+	
+
+</body>
+</html>

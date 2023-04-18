@@ -1,0 +1,98 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.imag {
+    width: 20%;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+#recuperar, #termos {
+
+    color: #feffff;
+}
+
+
+body {
+    background-color: #0E4E7C;
+}
+
+
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+
+    color: #feffff;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#telecall{
+
+    max-width: 400px;
+     max-height: 120px
+}
+
+
+
+input[type=email], input[type=password], input[type=text], input[list],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+#Mensagem {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #0E4E7C;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #276694;
+}
+
+div {
+    border-radius: 30px;
+    background-color: #B91C2C;
+    padding: 20px;
+    width: 30%;
+}
+
