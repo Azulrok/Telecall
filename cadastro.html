@@ -7,14 +7,51 @@
 	<title>Login do Usuário</title>
 	<link rel="icon" href="img/icon.png">
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-	<d class="imag">
+	<nav class="navbar is-danger" role="navigation" style="background-color: #B91C2C;" aria-label="main navigation" $danger>
+		<d class="navbar-brand">
+		  <a class="navbar-item" href="#">
+			<img src="img/logo.png"  height="10"   >
+		  </a>
+	  
+		  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		  </a>
+		</d>
+	  
+		<d id="navbarBasicExample" class="navbar-menu">
+		  <d class="navbar-start">
+			<a class="navbar-item">
+			  Home
+			</a>
+	  
+			<a class="navbar-item">
+			  cadastro
+			</a>
+			<a class="navbar-item">
+				Login
+			</a>
+			<a class="navbar-item">
+				contato
+			</a>  
+			</d>
+		  </d>
+	  
+		  <div class="navbar-end">
+			<div class="navbar-item">
+			  <div class="buttons">
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </nav>
 
-		<img id="imag" src="img/logo.png">
-
-	</d>
 
 
 <br>
@@ -23,11 +60,11 @@
 			<p class="p2">Cadastro de Usuário
 		</h1>
 	</center>
-
+<br>
 
 
 	<div class="">
-			<img id="telecall" src="img/telecall.png"  >
+			<img id="telecall" src="img/telecall.png" >
 			<p class="p2">
 				<label for="nome">Nome Completo:</label>
 				<input type="text" id="nome" name="nome" required placeholder="Nome Completo">
